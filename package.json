@@ -1,0 +1,22 @@
+{
+  "name": "webscrape",
+  "version": "0.0.1",
+  "description": "scrape le web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon",
+  "license": "ISC",
+  "dependencies": {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "async" : "latest",
+    "ejs" : "latest",
+    "express-ejs-layouts": "^1.1.0"
+
+
+  }
+
+}

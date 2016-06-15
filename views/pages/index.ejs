@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webscrape</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/app.css" />
+
+</head>
+<body>
+
+<h1>Craiglist</h1>
+
+    <% for(var i=0; i<cl_time.length; i++) {%>
+      <div class="columns">
+
+    <div class="column is-1 is-offset-1 is-mobile time"><%= cl_time[i] %></div>
+    <div class="column is-9 is-mobile link">
+<a href= <%= cl_link[i] %> >  <%= cl_title[i] %>
+</a>
+</div>
+
+  </div>
+
+    <% } %>
+
+
+<h1>Indeed</h1>
+
+
+
+    <% for(var i=0; i<ind_time.length; i++) {%>
+      <div class="columns">
+
+    <div class="column is-1 is-offset-1 is-mobile time"><%= ind_time[i] %></div>
+    <div class="column is-9 is-mobile link">
+<a href= <%= ind_link[i] %> >  <%= ind_title[i] %>
+</a>
+</div>
+
+  </div>
+
+    <% } %>
+
+<h1>Dice HTML</h1>
+
+<% for(var i=0; i<dice_time.length; i++) {%>
+  <div class="columns">
+
+<div class="column is-1 is-offset-1 is-mobile time"><%= dice_time[i] %></div>
+<div class="column is-9 is-mobile link">
+<a href= <%= dice_link[i] %> >  <%= dice_title[i] %>
+</a>
+</div>
+
+</div>
+
+<% } %>
+
+
+
+
+
+
+<!--
+<ul>
+<% for(var i=0; i<cl_title.length; i++) {%>
+   <li><%= cl_title[i] %></li>
+<% } %>
+</ul>
+
+ !-->
+
+
+
+
+</body>
+</html>
